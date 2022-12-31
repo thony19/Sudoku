@@ -95,8 +95,8 @@ const initGameGrid = () => {
     for (let i = 0; i < Math.pow(CONSTANT.GRID_SIZE,2); i++) {
         let row = Math.floor(i/CONSTANT.GRID_SIZE);
         let col = i % CONSTANT.GRID_SIZE;
-        if (row === 2 || row === 5) cells[i].style.marginBottom = '10px';
-        if (col === 2 || col === 5) cells[i].style.marginRight = '10px';
+        if (row === 2 || row === 5) cells[i].style.marginBottom = '0.8vw';
+        if (col === 2 || col === 5) cells[i].style.marginRight = '0.8vw';
     }
 }
 

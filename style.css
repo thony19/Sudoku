@@ -400,11 +400,13 @@ nav {
     bottom: 0vw;
     width: 50vw !important;
     height: 50vw !important;
+    z-index: -1;
 }
 .lottie_two{
     position: absolute;
     top: 5vw;
     right: 0;
+    z-index: -1;
 }
 .displayNone{
     display: none;
@@ -418,6 +420,7 @@ nav {
     border-radius: 50px;
     top: 49%;
     left: 49%;
+    z-index: -1;
 }
 .lottie::before {
     content: "";
@@ -492,5 +495,10 @@ nav {
     .pause-btn {
         width: 4vw;
         height: 4vw;
+    }
+    .lottie_two::before {
+        content: "";
+        width: 1.5vw;
+        height: 1.5vw;
     }
 }

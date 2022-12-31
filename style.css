@@ -394,7 +394,6 @@ nav {
 .cell-err {
     animation: zoom-out-shake 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
 .lottie{
     position: absolute;
     left: 0;
@@ -402,15 +401,33 @@ nav {
     width: 50vw !important;
     height: 50vw !important;
 }
-
 .lottie_two{
     position: absolute;
     top: 5vw;
     right: 0;
 }
-
 .displayNone{
     display: none;
+}
+.lottie_two::before {
+    content: "";
+    position: absolute;
+    background: #00aeef;
+    width: 0.5vw;
+    height: 0.5vw;
+    border-radius: 50px;
+    top: 49%;
+    left: 49%;
+}
+.lottie::before {
+    content: "";
+    position: absolute;
+    background: #00aeef;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50px;
+    top: 49%;
+    left: 49%;
 }
 
 @keyframes zoom-out-shake {
